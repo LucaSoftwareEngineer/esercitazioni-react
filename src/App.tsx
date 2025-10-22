@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Main from "./esercizio-7/Main";
+import Main from "./esercizio-8/Main";
 
 function App() {
   return (
