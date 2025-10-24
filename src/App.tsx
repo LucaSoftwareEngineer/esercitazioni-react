@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Main from "./esercizio-10/Main";
+import Main from "./esercizio-11/Main";
+import {store} from "./esercizio-11/store";
+import {Provider} from "react-redux";
+import {useAppSelector} from "./esercizio-11/hooks";
 
 function App() {
-  return (
-    <div>
+
+    return (
+    <Provider store={store}>
         <h1>
             <img src={logo} className="App-logo" alt="logo" />
             &nbsp;
@@ -13,8 +17,8 @@ function App() {
         </h1>
         <br />
         <Main />
-    </div>
-  );
+    </Provider>
+    );
 }
 
 export default App;
